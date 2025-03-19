@@ -21,4 +21,4 @@ targets:
 docker:
   username: vstirbu
 
-kubeconfig: ../../../config.csc
+kubeconfig: ../config
