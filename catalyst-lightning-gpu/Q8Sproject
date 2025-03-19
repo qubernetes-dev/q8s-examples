@@ -1,0 +1,24 @@
+name: pennylane-catalyst
+
+python_env:
+  dependencies:
+    - pennylane
+    - pennylane-catalyst
+
+targets:
+  cpu:
+    python_env:
+      dependencies:
+        - jax
+        - pennylane-lightning
+
+  gpu:
+    python_env:
+      dependencies:
+        - jax[cuda12]
+        - pennylane-lightning-gpu
+
+docker:
+  username: vstirbu
+
+kubeconfig: ../../../config.csc
