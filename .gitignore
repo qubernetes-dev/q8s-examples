@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 .q8s_cache/
+.venv/
 
 config
 

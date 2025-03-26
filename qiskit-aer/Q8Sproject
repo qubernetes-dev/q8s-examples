@@ -15,4 +15,6 @@ targets:
         - qiskit-aer==0.15.1
 
 docker:
-  username: vstirbu
+  username: your-dockerhub-username
+
+kubeconfig: /path/to/your/kubeconfig
