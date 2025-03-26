@@ -1,0 +1,21 @@
+name: matplotlib-example
+
+python_env:
+  dependencies:
+    - matplotlib
+    
+targets:
+  cpu:
+    python_env:
+      dependencies:
+        - q8s
+        
+  gpu:
+    python_env:
+      dependencies:
+        - q8s
+
+docker:
+  username: dockerhub-username
+
+kubeconfig: /path/to/kubeconfig
