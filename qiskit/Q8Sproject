@@ -13,8 +13,13 @@ targets:
     python_env:
       dependencies:
         - qiskit-aer==0.15.1
+  qpu:
+    python_env:
+      dependencies:
+        - iqm-client[qiskit]==23.4
+
 
 docker:
-  username: your-dockerhub-username
+  username: vstirbu
 
-kubeconfig: /path/to/your/kubeconfig
+kubeconfig: ../config.csc.user

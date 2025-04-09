@@ -5,12 +5,12 @@ This experiment facilitates running a simple Qiskit circuit in a Qubernetes clus
 ## Prerequisites
 
 - Docker installed
-- Docker Hub account (update the username in `Q8Sproject`)
+- Docker Hub account (update the username in the `Q8Sproject` file)
   ```yaml
   docker:
     username: your-dockerhub-username
   ```
-- Kubeconfig file for a Qubernetes cluster (update the path in `Q8Sproject`)
+- Kubeconfig file for a Qubernetes cluster (update the path in the `Q8Sproject` file)
   ```yaml
   kubeconfig: /path/to/your/kubeconfig
   ```
