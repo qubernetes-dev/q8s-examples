@@ -1,0 +1,21 @@
+name: dynamiqs-example
+
+python_env:
+  dependencies:
+    - dynamiqs
+
+targets:
+  cpu:
+    python_env:
+      dependencies:
+        - jax
+
+  gpu:
+    python_env:
+      dependencies:
+        - jax[cuda12]
+
+docker:
+  username: vstirbu
+
+kubeconfig: /path/to/your/kubeconfig
