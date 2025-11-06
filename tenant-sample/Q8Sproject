@@ -1,0 +1,23 @@
+name: sample-project
+
+python_env:
+  dependencies:
+    - scikit-learn
+    - mlflow
+    - qiskit==1.2.4
+    - pylatexenc
+
+targets:
+  gpu:
+    python_env:
+      dependencies:
+        - qiskit-aer-gpu==0.15.1
+  cpu:
+    python_env:
+      dependencies:
+        - qiskit-aer==0.15.1
+
+docker:
+  username: <your_dockerhub_username> # eg: abcuser
+
+kubeconfig: <path_to_tenant_eduard_kubeconfig_file> # eg: /home/abc/tenant-eduard-kubeconfig.yaml
